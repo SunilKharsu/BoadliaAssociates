@@ -1,5 +1,5 @@
-export const TeamCard = ({ member }) => (
-  <article className="card team-card">
+export const TeamCard = ({ member, delay = 0 }) => (
+  <article className="card team-card reveal" style={{ '--reveal-delay': `${delay}ms` }}>
     <div className="avatar" aria-hidden="true">
       {member.name
         .split(' ')

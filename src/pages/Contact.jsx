@@ -4,7 +4,7 @@ import { firm, offices } from '../utils/constants'
 
 export const Contact = () => (
   <div className="page">
-    <section className="section hero-secondary">
+    <section className="section hero-secondary reveal">
       <div>
         <span className="eyebrow">Contact</span>
         <h1>Let’s discuss your matter in confidence.</h1>
@@ -21,7 +21,7 @@ export const Contact = () => (
       </div>
     </section>
 
-    <section className="section">
+    <section className="section reveal">
       <div className="two-column">
         <div>
           <SectionTitle

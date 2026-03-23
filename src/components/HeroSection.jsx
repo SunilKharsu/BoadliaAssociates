@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { stats } from '../utils/constants'
 
 export const HeroSection = ({ title, subtitle, ctaPrimary, ctaSecondary }) => (
-  <section className="hero">
+  <section className="hero reveal">
     <div className="hero-content">
       <span className="hero-badge">Full-service corporate law firm</span>
       <h1>{title}</h1>

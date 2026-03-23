@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { formatDate } from '../utils/formatDate'
 
-export const BlogCard = ({ post }) => (
-  <article className="card blog-card">
+export const BlogCard = ({ post, delay = 0 }) => (
+  <article className="card blog-card reveal" style={{ '--reveal-delay': `${delay}ms` }}>
     <span className="tag">{post.category}</span>
     <h3>{post.title}</h3>
     <p>{post.excerpt}</p>

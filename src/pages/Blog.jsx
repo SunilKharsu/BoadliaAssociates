@@ -12,7 +12,7 @@ export const Blog = () => {
 
   return (
     <div className="page">
-      <section className="section hero-secondary">
+    <section className="section hero-secondary reveal">
         <div>
           <span className="eyebrow">Insights</span>
           <h1>Practical guidance for legal and business leaders.</h1>
@@ -35,12 +35,12 @@ export const Blog = () => {
           title="Legal updates and boardroom insights"
           description="Explore recent briefings and analysis from the Boadlia Associates team."
         />
-        <div className="grid three">
-          {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
-          ))}
-        </div>
-      </section>
-    </div>
-  )
+      <div className="grid three">
+        {posts.map((post, index) => (
+          <BlogCard key={post.slug} post={post} delay={index * 80} />
+        ))}
+      </div>
+    </section>
+  </div>
+)
 }

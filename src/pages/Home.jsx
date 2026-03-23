@@ -38,8 +38,8 @@ export const Home = () => {
           description="A focused practice mix modeled after top corporate firms with deep expertise in transactions, litigation, and IP."
         />
         <div className="grid three">
-          {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+          {services.map((service, index) => (
+            <ServiceCard key={service.slug} service={service} delay={index * 80} />
           ))}
         </div>
         <div className="section-actions">
@@ -56,8 +56,12 @@ export const Home = () => {
           description="Inspired by the structured, client-first positioning seen in leading firms, we blend strategic counsel with hands-on execution."
         />
         <div className="grid three">
-          {values.map((value) => (
-            <article className="card value-card" key={value.title}>
+          {values.map((value, index) => (
+            <article
+              className="card value-card reveal"
+              style={{ '--reveal-delay': `${index * 80}ms` }}
+              key={value.title}
+            >
               <h3>{value.title}</h3>
               <p>{value.description}</p>
             </article>
@@ -72,8 +76,8 @@ export const Home = () => {
           description="Seasoned professionals across corporate law, litigation, technology, and infrastructure."
         />
         <div className="grid three">
-          {team.map((member) => (
-            <TeamCard key={member.name} member={member} />
+          {team.map((member, index) => (
+            <TeamCard key={member.name} member={member} delay={index * 80} />
           ))}
         </div>
         <div className="section-actions">
@@ -91,8 +95,12 @@ export const Home = () => {
           align="center"
         />
         <div className="grid three">
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.name} testimonial={testimonial} />
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={testimonial.name}
+              testimonial={testimonial}
+              delay={index * 80}
+            />
           ))}
         </div>
       </section>
@@ -104,8 +112,8 @@ export const Home = () => {
           description="Briefings on IP, litigation, and technology law with a business lens."
         />
         <div className="grid three">
-          {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
+          {posts.map((post, index) => (
+            <BlogCard key={post.slug} post={post} delay={index * 80} />
           ))}
         </div>
         <div className="section-actions">
@@ -115,7 +123,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="section cta">
+      <section className="section cta reveal">
         <div>
           <h2>Ready for a legal partner who truly listens?</h2>
           <p>Share your business context and we will propose a tailored advisory plan.</p>

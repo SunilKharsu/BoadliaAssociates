@@ -12,7 +12,7 @@ export const Team = () => {
 
   return (
     <div className="page">
-      <section className="section hero-secondary">
+    <section className="section hero-secondary reveal">
         <div>
           <span className="eyebrow">Our team</span>
           <h1>Trusted advisors, seasoned litigators, strategic partners.</h1>
@@ -35,12 +35,12 @@ export const Team = () => {
           title="Meet the people behind Boadlia Associates"
           description="Experienced professionals leading complex deals, disputes, and advisory matters."
         />
-        <div className="grid three">
-          {team.map((member) => (
-            <TeamCard key={member.name} member={member} />
-          ))}
-        </div>
-      </section>
-    </div>
-  )
+      <div className="grid three">
+        {team.map((member, index) => (
+          <TeamCard key={member.name} member={member} delay={index * 80} />
+        ))}
+      </div>
+    </section>
+  </div>
+)
 }

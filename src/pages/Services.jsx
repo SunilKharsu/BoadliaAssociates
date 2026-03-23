@@ -12,7 +12,7 @@ export const Services = () => {
 
   return (
     <div className="page">
-      <section className="section hero-secondary">
+    <section className="section hero-secondary reveal">
         <div>
           <span className="eyebrow">Practice Areas</span>
           <h1>End-to-end legal advisory for complex businesses.</h1>
@@ -35,12 +35,12 @@ export const Services = () => {
           title="Focused, scalable, and board-ready support"
           description="Choose a practice area to view details, team strengths, and engagement modes."
         />
-        <div className="grid three">
-          {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
-          ))}
-        </div>
-      </section>
-    </div>
-  )
+      <div className="grid three">
+        {services.map((service, index) => (
+          <ServiceCard key={service.slug} service={service} delay={index * 80} />
+        ))}
+      </div>
+    </section>
+  </div>
+)
 }

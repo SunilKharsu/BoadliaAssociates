@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { validateContact } from '../utils/validation'
 
 const initialState = {
@@ -11,10 +10,9 @@ const initialState = {
 }
 
 export const ContactForm = () => {
-  const navigate = useNavigate()
   const [form, setForm] = useState(initialState)
   const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState({ loading: false, success: false, error: '' })
+  const [status, setStatus] = useState({ loading: false, error: '' })
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -30,31 +28,13 @@ export const ContactForm = () => {
       return
     }
 
-    setStatus({ loading: true, success: false, error: '' })
-
-    const payload = new URLSearchParams({
-      'form-name': 'contact',
-      ...form,
-    })
-
     try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: payload.toString(),
-      })
-
-      if (!response.ok) {
-        throw new Error('Submission failed')
-      }
-
-      setStatus({ loading: false, success: true, error: '' })
+      setStatus({ loading: true, error: '' })
       setForm(initialState)
-      navigate('/thank-you')
+      event.currentTarget.submit()
     } catch (error) {
       setStatus({
         loading: false,
-        success: false,
         error: 'Unable to submit right now. Please call or email us directly.',
       })
     }
@@ -65,6 +45,7 @@ export const ContactForm = () => {
       className="contact-form"
       name="contact"
       method="POST"
+      action="/thank-you"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
@@ -104,7 +85,6 @@ export const ContactForm = () => {
       <button className="btn btn-primary" type="submit" disabled={status.loading}>
         {status.loading ? 'Sending…' : 'Submit inquiry'}
       </button>
-      {status.success ? <p className="success">Inquiry received. We will respond shortly.</p> : null}
       {status.error ? <p className="error">{status.error}</p> : null}
     </form>
   )

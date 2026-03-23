@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
-export const ServiceCard = ({ service }) => (
-  <article className="card service-card">
+export const ServiceCard = ({ service, delay = 0 }) => (
+  <article className="card service-card reveal" style={{ '--reveal-delay': `${delay}ms` }}>
     <h3>{service.title}</h3>
     <p>{service.summary}</p>
     <ul>

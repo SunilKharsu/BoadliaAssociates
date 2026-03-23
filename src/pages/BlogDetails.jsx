@@ -28,7 +28,7 @@ export const BlogDetails = () => {
 
   return (
     <div className="page">
-      <section className="section hero-secondary">
+      <section className="section hero-secondary reveal">
         <div>
           <span className="eyebrow">{post.category}</span>
           <h1>{post.title}</h1>
@@ -40,7 +40,7 @@ export const BlogDetails = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section reveal">
         <article className="article">
           {post.content.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

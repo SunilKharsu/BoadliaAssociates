@@ -3,7 +3,7 @@ import { awards, firm, values } from '../utils/constants'
 
 export const About = () => (
   <div className="page">
-    <section className="section hero-secondary">
+    <section className="section hero-secondary reveal">
       <div>
         <span className="eyebrow">About the firm</span>
         <h1>Trusted legal counsel for ambitious businesses.</h1>
@@ -27,8 +27,12 @@ export const About = () => (
         title="Business-aligned, globally informed, and execution-focused"
       />
       <div className="grid three">
-        {values.map((value) => (
-          <article className="card value-card" key={value.title}>
+        {values.map((value, index) => (
+          <article
+            className="card value-card reveal"
+            style={{ '--reveal-delay': `${index * 80}ms` }}
+            key={value.title}
+          >
             <h3>{value.title}</h3>
             <p>{value.description}</p>
           </article>
@@ -36,7 +40,7 @@ export const About = () => (
       </div>
     </section>
 
-    <section className="section muted">
+    <section className="section muted reveal">
       <SectionTitle
         eyebrow="Leadership"
         title="Advocate-led counsel with courtroom experience"
@@ -64,8 +68,12 @@ export const About = () => (
         description="A curated snapshot of the accolades and rankings that reflect our commitment to quality."
       />
       <div className="grid three">
-        {awards.map((award) => (
-          <article className="card award-card" key={award.title}>
+        {awards.map((award, index) => (
+          <article
+            className="card award-card reveal"
+            style={{ '--reveal-delay': `${index * 80}ms` }}
+            key={award.title}
+          >
             <h3>{award.title}</h3>
             <p>{award.description}</p>
           </article>

@@ -28,7 +28,7 @@ export const ServiceDetails = () => {
 
   return (
     <div className="page">
-      <section className="section hero-secondary">
+      <section className="section hero-secondary reveal">
         <div>
           <span className="eyebrow">Practice area</span>
           <h1>{service.title}</h1>
@@ -44,7 +44,7 @@ export const ServiceDetails = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section reveal">
         <SectionTitle
           eyebrow="Engagement model"
           title="Structured advisory with partner oversight"
