@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "corporate-commercial",
+    "title": "Corporate & Commercial",
+    "summary": "Advisory across incorporations, joint ventures, M&A, shareholder agreements, and contract lifecycle management.",
+    "highlights": [
+      "Entity setup, restructuring, and governance",
+      "M&A due diligence, documentation, and negotiations",
+      "Commercial contracts and strategic alliances"
+    ]
+  },
+  {
+    "slug": "litigation",
+    "title": "Litigation & Arbitration",
+    "summary": "Strategic dispute resolution with clear risk analysis, mediation pathways, and courtroom advocacy.",
+    "highlights": [
+      "Commercial dispute strategy and representation",
+      "Regulatory investigations and enforcement",
+      "Arbitration support and settlement advisory"
+    ]
+  },
+  {
+    "slug": "intellectual-property",
+    "title": "Intellectual Property",
+    "summary": "Protection and commercialization of patents, trademarks, copyrights, and trade secrets.",
+    "highlights": [
+      "IP audits, filings, and portfolio management",
+      "Licensing, franchising, and technology transfer",
+      "IP enforcement and anti-counterfeiting strategy"
+    ]
+  },
+  {
+    "slug": "it-data-protection",
+    "title": "IT & Data Protection",
+    "summary": "Data governance, cybersecurity readiness, and compliant digital operations for regulated sectors.",
+    "highlights": [
+      "Data protection impact assessments",
+      "Technology procurement and SaaS contracts",
+      "Incident response and regulatory filings"
+    ]
+  },
+  {
+    "slug": "energy-infrastructure",
+    "title": "Energy & Infrastructure",
+    "summary": "Advisory for project finance, ESG frameworks, and regulatory compliance across energy assets.",
+    "highlights": [
+      "Renewables, green hydrogen, and energy transition",
+      "PPP contracts and concession agreements",
+      "Project finance diligence and dispute support"
+    ]
+  },
+  {
+    "slug": "sports-entertainment",
+    "title": "Sports & Entertainment",
+    "summary": "Legal and business advisory for leagues, rights holders, platforms, and talent management.",
+    "highlights": [
+      "Media rights and sponsorship negotiations",
+      "Gaming, esports, and platform compliance",
+      "Talent contracts and IP monetization"
+    ]
+  }
+]

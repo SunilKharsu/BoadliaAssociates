@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "patent-strategy-growth",
+    "title": "Patent strategy for growth-stage enterprises",
+    "excerpt": "How founders can align IP filings with fundraising milestones and international expansion.",
+    "date": "2025-11-18",
+    "category": "Intellectual Property",
+    "content": [
+      "Growth-stage companies often delay patent filings, assuming product-market fit is the only milestone that matters. A stronger approach is to align patent timelines with capital raises, strategic partnerships, and licensing discussions.",
+      "Prioritize filings that protect core algorithms, proprietary workflows, and defensible differentiation. Pair them with a commercialization roadmap to convert IP into revenue.",
+      "Work with counsel early to avoid disclosure risks during demos, fundraising decks, and pilot programs."
+    ]
+  },
+  {
+    "slug": "debt-recovery-roadmap",
+    "title": "A debt recovery roadmap for B2B transactions",
+    "excerpt": "Early documentation, negotiation cues, and litigation triggers that preserve commercial relationships.",
+    "date": "2025-09-02",
+    "category": "Litigation",
+    "content": [
+      "Debt recovery works best when escalation steps are defined before the contract is signed. Payment schedules, interest clauses, and dispute-resolution pathways should be explicit.",
+      "For corporate clients, structured reminders and negotiated settlements often preserve vendor relationships while keeping cash flow stable.",
+      "When litigation is required, ensure documentation is organized chronologically to speed up pleadings and hearings."
+    ]
+  },
+  {
+    "slug": "electronic-evidence-checklist",
+    "title": "Electronic evidence: a practical courtroom checklist",
+    "excerpt": "Key steps to make digital records admissible, reliable, and ready for dispute resolution.",
+    "date": "2025-06-14",
+    "category": "Technology Law",
+    "content": [
+      "Collect electronic evidence with a documented chain of custody, including metadata and access logs.",
+      "Preserve original files before transformation to avoid authenticity challenges.",
+      "Maintain expert declarations and technical notes to support admissibility when required."
+    ]
+  }
+]
