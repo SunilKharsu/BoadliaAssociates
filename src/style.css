@@ -594,6 +594,8 @@ main {
   box-shadow: var(--shadow);
   display: grid;
   gap: 16px;
+  max-height: 88vh;
+  overflow: auto;
 }
 
 .disclaimer-modal h2 {
@@ -634,11 +636,11 @@ main {
 
 .mobile-sticky-actions {
   position: fixed;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
+  right: 16px;
+  bottom: 120px;
+  display: flex;
   gap: 12px;
+  flex-direction: column;
   z-index: 40;
 }
 
@@ -780,8 +782,9 @@ main {
 }
 
 @media (max-width: 640px) {
-  .mobile-sticky-actions {
-    display: flex;
+  .disclaimer-modal {
+    padding: 20px;
+    max-height: 90vh;
   }
 
   .section {

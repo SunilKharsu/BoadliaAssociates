@@ -2,7 +2,7 @@ export const firm = {
   name: 'Boadlia Associates',
   tagline: 'Corporate law advisors for growth-ready businesses',
   website: 'https://www.boadliaassociates.com',
-  phone: 'M: 9050066788',
+  phone: '90500 66788',
   email: 'contact@boadliaassociates.com',
   address: 'K-71B, First Floor, Lajpat Nagar II, Delhi, India',
   officeHours: 'Mon–Sat: 9:30 AM – 6:30 PM',
@@ -64,7 +64,7 @@ export const offices = [
   {
     city: 'New Delhi',
     address: 'K-71B, First Floor, Lajpat Nagar II, Delhi, India',
-    phone: 'M: 9050066788',
+    phone: '90500 66788',
     email: 'delhi@boadliaassociates.com',
   },
 ]
